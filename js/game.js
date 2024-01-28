@@ -4,6 +4,9 @@ Math.TAU = Math.PI * 2;
 var tannie = new Date(2024, 1, 7);
 var now = Date.now();
 var isBirthday = now >= tannie.getTime();
+// check if url contains the word debug 
+var debug = window.location.href.indexOf("debug") > -1;
+if (debug) { isBirthday = true; }
 
 ///// LOAD IMAGES /////
 
