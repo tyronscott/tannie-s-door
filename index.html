@@ -1,98 +1,97 @@
-<!doctype>
-<html>
+<!DOCTYPE html>
+<html lang="en" >
 
 <head>
+  <meta charset="UTF-8">
+  <title>market-wp.com</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <!-- Place this data between the <head> tags of your website -->
-    <title>tannie's door</title>
-    <meta name="description" content="game for tannie's birthday :p" />
-    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        #oopss {
+  background: #454545;
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 1.5em;
+  z-index: 9999;
+}
+#oopss #error-text {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Shabnam', Tahoma, sans-serif;
+  color: #fff;
+  direction: rtl;
+}
+#oopss #error-text img {
+  margin: 85px auto 20px;
+  height: 342px;
+}
+#oopss #error-text span {
+  position: relative;
+  font-size: 3.3em;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+#oopss #error-text p.p-a {
+  font-size: 19px;
+  margin: 30px 0 15px 0;
+}
+#oopss #error-text p.p-b {
+  font-size: 15px;
+}
+#oopss #error-text .back {
+  background: #fff;
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 2em auto 0;
+  padding: .7em 2em;
+  border-radius: 500px;
+  box-shadow: 0 20px 70px 4px rgba(0, 0, 0, 0.1), inset 7px 33px 0 0px #fff300;
+  font-weight: 900;
+  transition: all 300ms ease;
+}
+#oopss #error-text .back:hover {
+  -webkit-transform: translateY(-13px);
+          transform: translateY(-13px);
+  box-shadow: 0 35px 90px 4px rgba(0, 0, 0, 0.3), inset 0px 0 0 3px #000;
+}
 
-    <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="tannie's door">
-    <meta itemprop="description" content="birthday ni tannie">
-    <meta itemprop="image" content="https://i.imgur.com/FKUy7W3.jpeg">
+@font-face {
+  font-family: Shabnam;
+  src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.eot");
+  src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.woff") format("woff"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.woff2") format("woff2"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Shabnam;
+  src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.eot");
+  src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.eot?#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.woff") format("woff"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.woff2") format("woff2"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.ttf") format("truetype");
+  font-weight: normal;
+}
 
-    <!-- Open Graph data -->
-    <meta property="og:title" content="tannie's door">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://ncase.me/door/">
-    <meta property="og:image" content="https://i.imgur.com/FKUy7W3.jpeg">
-    <meta property="og:description" content="birthday ni tannie">
-    <meta property="og:site_name" content="tannie's door">
-
-    <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-
+    </style>
+    
 </head>
 
 <body>
 
-    <div id="loading">
-        <div>LOADING</div>
+  <div id='oopss'>
+    <div id='error-text'>
+        <img src="https://cdn.rawgit.com/ahmedhosna95/upload/1731955f/sad404.svg" alt="404">
+        <span>:D</span>
+        <p class="p-a">
+           . i didnt make it</p>
     </div>
+</div>
+  
+  
 
-    <div id="whole_container">
-
-        <!--span style="display:none"-->
-        <div id="screen_one">
-            <canvas id="canvas_intro"></canvas>
-        </div>
-
-        <div id="screen_two">
-            <div id="canvas_container">
-
-                <canvas id="canvas_1" width="300" height="380"></canvas>
-                <canvas id="canvas_2" width="300" height="380"></canvas>
-                <canvas id="canvas_3" width="300" height="380" style="margin:0"></canvas>
-
-                <div id="valentines_text"></div>
-                <div id="rewind_text">rewinding...</div>
-                <div id="replay_text">playing back...</div>
-
-            </div>
-        </div>
-        <!--/span-->
-
-        <div id="screen_three">
-
-            <!-- <div id="bottom">
-                    <a href="https://twitter.com/ncasenmare">made by @ncasenmare</a>
-                    |
-                    <a href="https://github.com/ncase/door">open source code</a>
-                </div> -->
-
-            <div id="end_container">
-
-                <span style="font-size:38px;">happy 20th birthday babu</span> <br>
-
-
-
-
-
-                <span>i hope u liked it aha</span>
-
-
-
-
-                <br>
-                <br>
-
-
-
-            </div>
-        </div>
-
-    </div>
 </body>
 
 </html>
-
-<script src="js/Key.js"></script>
-<script src="js/game.js"></script>
-<script src="js/popup.js"></script>
-<script src="js/soundjs-0.6.0.min.js"></script>
-
-<script>
-    //STAGE = 4;
-</script>
