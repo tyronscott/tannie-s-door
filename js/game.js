@@ -628,7 +628,7 @@ window.onload = function () {
 	createjs.Sound.alternateExtensions = ["ogg"];
 	addSound("ding", "audio/ding.mp3");
 	addSound("rewind", "audio/rewind.mp3");
-	addSound("jazz", "audio/jazz.mp3");
+	addSound("jazz", "audio/hev.mp3");
 	addSound("step", "audio/step.mp3");
 	addSound("unlock", "audio/unlock.mp3");
 	addSound("error", "audio/error.mp3");
@@ -659,7 +659,7 @@ window.onload = function () {
 
 				if (STAGE == 3 && CURRENT_LEVEL == 1) {
 					var framesLeft = (rewindLevel.frames.length - rewindFrame) + levelObjects[2].frames.length;
-					if (framesLeft < 135) {
+					if (framesLeft < 113) {
 						window.HAS_PLAYED_JAZZ = true;
 						createjs.Sound.play("jazz");
 					}
