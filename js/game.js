@@ -785,7 +785,7 @@ function iHeartYou() {
 
 	var vtext = document.getElementById("valentines_text");
 	vtext.style.display = "block";
-	vtext.textContent = "- ts :D";
+	vtext.textContent = " for tannie!! - ts :D";
 
 	setTimeout(function () {
 		vtext.style.letterSpacing = "3px";
